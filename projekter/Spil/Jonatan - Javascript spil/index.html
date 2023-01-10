@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Jonatan</title>
+
+    <meta name="description" content="Multimedie designer KEA" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/spil.css" />
+  </head>
+  <body>
+    <div id="game-scorecard">
+      <div class="life">
+        <p>Liv: <span id="target-life">3</span></p>
+      </div>
+      <div class="time">
+        <p>Tid: <span id="target-time">0</span>s</p>
+      </div>
+      <div class="score">
+        <p>Point: <span id="target-point">0</span></p>
+      </div>
+    </div>
+
+    <div id="game-wrap">
+      <div class="game-target positive" id="target-1"><h2>1</h2></div>
+      <div class="game-target negative" id="target-2"><h2>2</h2></div>
+      <div class="game-target negative" id="target-3"><h2>3</h2></div>
+      <div class="game-target positive" id="target-4">
+        <h2>4</h2>
+      </div>
+      <div class="game-target positive" id="target-5"><h2>5</h2></div>
+      <div class="game-target positive" id="target-6"><h2>6</h2></div>
+      <div class="game-target negative" id="target-7">
+        <h2>7</h2>
+      </div>
+      <div class="game-target positive" id="target-8"><h2>8</h2></div>
+      <div class="game-target positive" id="target-9"><h2>9</h2></div>
+      <div class="game-target positive" id="target-10"><h2>10</h2></div>
+    </div>
+
+    <div id="modal-start" class="modal show">
+      <div class="modal-content">
+        <h1>Skyd skiverne hurtigts</h1>
+
+        <button id="start-game">Start spillet</button>
+      </div>
+    </div>
+
+    <div id="modal-complete" class="modal">
+      <div class="modal-content">
+        <h1>Level Complete!</h1>
+        <button id="start-game-2">Prøv igen</button>
+      </div>
+    </div>
+
+    <div id="modal-fail" class="modal">
+      <div class="modal-content">
+        <h1>Du fejlede!</h1>
+        <button id="start-game-3">Prøv igen</button>
+      </div>
+    </div>
+
+    <!-- JavaScript goes here-->
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

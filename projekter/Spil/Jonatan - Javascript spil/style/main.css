@@ -1,0 +1,146 @@
+/*
+  Main stylesheet
+*/
+
+/* Desktop styles */
+
+html,
+body {
+  font-size: 16px;
+}
+
+/*
+ Font styles
+*/
+
+button {
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  background: #f39c12;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+p,
+.p {
+  font-family: "Arial";
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+h1,
+.h1 {
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 4.5rem;
+  line-height: 1.2em;
+}
+
+h2,
+.h2 {
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2em;
+}
+
+h3,
+.h3 {
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+/*
+ ### COLORS ###
+ background-color: {color};
+ color: {text-color}
+*/
+
+.bg-blue {
+  background-color: blue;
+  color: white;
+}
+
+.bg-light-grey {
+  background-color: lightgray;
+  color: black;
+}
+
+.bg-green {
+  background-color: green;
+  color: white;
+}
+
+/*
+  ### GRID ###
+*/
+
+.flex-wrap {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flex-wrap-50 {
+  width: 50%;
+}
+
+.flex-wrap-33 {
+  width: 33.33%;
+}
+
+/*
+  
+  Padding, Margin
+*/
+
+.padding-sm {
+  padding: 1rem;
+}
+
+.padding-md {
+  padding: 2rem;
+}
+
+.padding-xl {
+  padding: 4rem;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+  .flex-wrap {
+    display: block;
+  }
+
+  .flex-wrap-50 {
+    width: 100%;
+  }
+
+  .flex-wrap-33 {
+    width: 100%;
+  }
+
+  .margin,
+  .padding {
+    width: 100%;
+  }
+
+  .padding-sm {
+    padding: 5px;
+  }
+
+  .padding-md {
+    padding: 15px;
+  }
+
+  .padding-xl {
+    padding: 20px;
+  }
+}
