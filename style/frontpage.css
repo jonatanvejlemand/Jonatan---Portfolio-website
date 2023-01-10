@@ -1,0 +1,29 @@
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-color: darkgoldenrod;
+  background-image: url("/images/Forside.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.hero .grid {
+  padding-top: 36vh;
+}
+.intro .margin-sm {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.intro .padding-md {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.arrow {
+  display: inline-block;
+  width: 2rem;
+
+  padding-left: 4px;
+}
+h2 {
+  display: inline-block;
+}

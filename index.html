@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <!-- 
+    #Coding reads from top to the bottom#
+   
+    Load styles first in this order, to overwrite potential styles on pages:
+        - reset.css 
+        - main.css
+        - {page}.css
+
+    Create HTML 
+
+    Load JavaScript in this order, to overwrite potential functions on pages: 
+        - main.js
+        - {page}.js
+    -->
+  <head>
+    <!-- UTF-8 is the language code, with æøå -->
+    <meta charset="UTF-8" />
+    <!-- Title desfines the title of the tap-->
+    <title>Jonatan</title>
+    <!-- Meta description is the description of your website for link and SEO -->
+    <meta name="description" content="Multimedie designer KEA" />
+    <!-- Meta viewport - is alway good to add to align all mobile browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheets goes here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/frontpage.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="navigation" class="flex-wrap">
+        <div class="flex-wrap-50">
+          <a href="index.html"><img src="images/Asset2.png" alt="Asset2" /> </a>
+        </div>
+        <div class="flex-wrap-25"><a href="portfolio.html">Portfolio</a></div>
+        <div class="flex-wrap-25"><a href="ommig.html">Om Mig</a></div>
+      </div>
+      <div id="burger">
+        <img class="burgericon" src="images/menu.png" alt="burgermenu" />
+      </div>
+    </nav>
+    <div id="app">
+      <div class="hero">
+        <div class="grid"><h1 class="fersken-font">Portfolio-Site</h1></div>
+      </div>
+
+      <div class="flex-wrap border-top intro">
+        <div class="flex-wrap-50 padding-md">
+          <a href="portfolio.html">
+            <h2 class="margin-sm">Portfolio</h2>
+            <img class="arrow" src="images/right-arrow.png" alt="arrow" />
+          </a>
+
+          <p>Her vil du kunne læse videre om mine udvalgte opgaver fra året. Du vil bla. kunne læse om mit emnesite, hvor jeg valgte at tage udgangspunkt i den urban og rå stil fra rap genren og indkoble på mit site.</p>
+        </div>
+        <div class="flex-wrap-50 padding-md">
+          <a href="ommig.html">
+            <h2 class="margin-sm">Om Mig</h2>
+            <img class="arrow" src="images/right-arrow.png" alt="arrow" />
+          </a>
+          <p>Hvor kommer jeg fra? Hvor mange søskende har jeg? Hvor arbejder jeg? Alt dette kan du læse meget mere om ved at klikke videre til Om Mig-siden.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="padding-xl">
+      <div class="flex-wrap">
+        <div class="flex-wrap-50"></div>
+        <div class="flex-wrap-50">Lavet af Jonatan</div>
+      </div>
+    </footer>
+
+    <!-- JavaScript goes here-->
+    <script src="javascript/main.js"></script>
+  </body>
+</html>

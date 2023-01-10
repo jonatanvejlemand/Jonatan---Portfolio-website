@@ -1,0 +1,360 @@
+/*
+  Main stylesheet - Used for all global styles
+*/
+
+/* Desktop styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&family=DM+Serif+Display&display=swap");
+
+html,
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+a {
+  font-family: "Archivo Narrow", sans-serif;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+a:hover {
+  color: #c9dbba;
+  transition: color 0.5s ease-out;
+}
+/*
+ Font styles
+*/
+
+p {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: 8rem;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+h4 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+}
+/*
+ ### COLORS ###
+ background-color: {color};
+ color: {text-color}
+*/
+
+.border-top {
+  border-top: 1px solid black;
+}
+.oliven-font {
+  color: #dcdba8;
+}
+.oliven-bg {
+  background-color: #dcdba8;
+  color: white;
+}
+.blue-font {
+  color: #75dbcd;
+}
+.blue-bg {
+  background-color: #75dbcd;
+  color: white;
+}
+.green-font {
+  color: #c9dbba;
+}
+.green-bg {
+  background-color: #c9dbba;
+  color: white;
+}
+.fersken-font {
+  color: #f5cda7;
+}
+.fersken-bg {
+  background-color: #f5cda7;
+  color: white;
+}
+.red-font {
+  color: #faa381;
+}
+.red-bg {
+  background-color: #faa381;
+  color: white;
+}
+/*
+  ### GRID ###
+*/
+
+.grid {
+  display: block;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+
+  margin-bottom: 20px;
+}
+.flex-wrap {
+  display: flex;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.flex-wrap-50 {
+  width: 50%;
+}
+
+.flex-wrap-33 {
+  width: 33.33%;
+}
+.flex-wrap-25 {
+  width: 25%;
+}
+#app {
+  opacity: 0;
+}
+#app.loaded {
+  opacity: 1;
+  transition: all 0.5s;
+}
+/*Nav
+*/
+.logo {
+  font-size: 16px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#navigation {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f5cda7;
+  border-bottom: 1px solid black;
+  font-family: "DM Serif Display", serif;
+  padding: 0;
+  max-width: unset;
+  padding: 2rem;
+}
+#navigation.open {
+  width: 100%;
+}
+#burger {
+  display: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.burgericon {
+  width: 100%;
+}
+nav .flex-wrap {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*Footer
+*/
+footer {
+  background-color: #c9dbba;
+  display: block;
+}
+footer .flex-wrap {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*
+  ### SPACING ###
+  (Padding, Margin)
+*/
+.padding-sm {
+  padding: 1rem;
+}
+
+.padding-md {
+  padding: 2rem;
+}
+
+.padding-xl {
+  padding: 4rem;
+}
+
+.margin-sm {
+  margin: 1rem;
+}
+
+.margin-md {
+  margin: 2rem;
+}
+
+.margin-xl {
+  margin: 4rem;
+}
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #faa381;
+}
+.btn-primary:hover {
+  background-color: #c9dbba;
+  color: white;
+  transition: all 0.5s;
+}
+.btn-secondary {
+  background-color: white;
+}
+/* Mobile styles */
+@media screen and (max-width: 1260px) {
+  h1,
+  .h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-wrap {
+    display: block;
+  }
+
+  .flex-wrap-50 {
+    width: 100%;
+  }
+
+  .flex-wrap-33 {
+    width: 100%;
+  }
+
+  .margin,
+  .padding {
+    width: 100%;
+  }
+
+  .padding-sm {
+    padding: 5px;
+  }
+
+  .padding-md {
+    padding: 15px;
+  }
+
+  .padding-xl {
+    padding: 20px;
+  }
+  p,
+  .p {
+    font-size: 1rem;
+  }
+
+  h1,
+  .h1 {
+    font-size: 4rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.25rem;
+  }
+  #navigation {
+    width: 0;
+    overflow: hidden;
+    background-color: #f5cda7;
+    border-bottom: 1px solid black;
+    font-family: "DM Serif Display", serif;
+    padding: 0;
+    max-width: unset;
+    transition: margin-top 0.5s;
+    margin-top: -200px;
+  }
+  #burger {
+    display: block;
+
+    background-color: white;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+  }
+  #navigation.open {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 0px;
+  }
+}
+
+/*
+  ####################
+  ### EXTRA NOTES ####
+  ####################
+
+
+  # CSS Selectors #
+  - HTML Tags eks: <p>, <h1>, <div>
+  - Classes eks: .margin-md, .padding-sm
+  - ID (ONLY ONE EACH PAGE): #thisIsAnId
+
+
+
+  # Nested styles and HTML #
+  Nested styles is when you take the HTML like this:
+
+  <button>
+    <p>
+      text
+    </p>
+  </button>
+
+  And then you overwrite the default styles you've already done on <p>
+
+  it looks like this:
+
+  button p {
+    something different style than the normal <p>
+  }
+
+*/
